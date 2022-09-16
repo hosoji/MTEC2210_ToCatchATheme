@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour   
 {
+
     public float speed;
     void Start()
     {
-        
+
         
     }
 
@@ -15,7 +16,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         float xMove = Input.GetAxis("Horizontal");
-
+        
         //Debug.Log("xMove:" + xMove);
        transform.Translate(xMove * speed * Time.deltaTime , 0, 0);
 
